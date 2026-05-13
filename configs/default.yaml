@@ -31,6 +31,9 @@ scenarios:
     description: "Primary provider fails 50% — circuit should oscillate"
     provider_overrides:
       primary: 0.5
+  - name: cache_stale_candidate
+    description: "Evaluate cache behavior with similarity"
+    provider_overrides: {}
   - name: all_healthy
     description: "Baseline — both providers healthy"
     provider_overrides: {}
